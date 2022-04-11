@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title name="CDTWUT">Countdown to wake up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <button id="selected" class="link" name="home" onclick="switchHome()"></button>  
+            </li>
+          <li>
+            <button id="unselected" class="link" name="settings" onclick="switchSettings()"></button>
+          </div>
+            </li>
+          <li id="languages-dropdown">
+            <button id="languages-link" class="link" name="languages"></button>
+            <div id="languages-menu">
+                <a href="" id="languages-option" onclick="setLanguage('en')">English</a>
+                <a href="" id="languages-option" onclick="setLanguage('pl')">Polski</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1 name="CDTWUC"></h1>
+      <h2 id="timer" class="timerReplace">..............</h2>
+    </section>
+    <button name="CDTTH" id="save" class="link" disabled onclick="saveSettings()">Save</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
